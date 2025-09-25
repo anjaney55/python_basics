@@ -1,5 +1,10 @@
-num1 = float(input("Enter the 1st float value : "))
-num2 = float(input("Enter the second float value : "))
+def avg_num(a,b,c):
+    sum=a+b+c
+    avg=sum/3
+    print(avg)
+    return avg
+    
 
+avg_num(14,30,56)
 
-print("the average of two float value is = ",(num1+num2)/2)
+avg_num(14587,356,556)
