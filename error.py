@@ -1,16 +1,12 @@
-#errorr handling using try and except and expection
-
-a = input("enter the table number : ")
+import sys
+user = input("Enter a number : ")
 
 try:
-    for i in range(1,11):
-        print(f"{int(a)}*{i}={int(a)*i}")
+    number = int(user)
+except ValueError:
+    print("You are not entered a number sorry!...")
+    sys.exit(1)
 
-except Exception as e:  #we can use except only and also we use multiple except according to the errorrs
-    print(e)
-    print("some errorr")
+print(f"You entered number is {user}")
 
-print("Hello")
-print("Hello")
-print("Hello")
-print("Hello")
+    
